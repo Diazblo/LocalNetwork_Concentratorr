@@ -147,6 +147,8 @@ void CONC_Report_RCV(const DEMO_packet_sensor_header_t* Header,
  */
 static void Report_1_0_RCV(const DEMO_data_1_0_t* Data, uint32_t DataLen)
 {
+	APP_PPRINTF("@data{\"temp:\" : \"%hi.%02hu\",  \"batt\" : \"%hu.%02hu\",  \"wind\" : \"%hu\"}\r\n", Data->temperature / 100, CONC_ABS_INT(Data->temperature % 100), (Data->voltage / 20), ((Data->voltage % 20) * 5), Data->wind_sensor_time);
+#if 0
   bool voltage_present=true;
 
   /*Temperature*/
@@ -167,6 +169,7 @@ static void Report_1_0_RCV(const DEMO_data_1_0_t* Data, uint32_t DataLen)
   {
     APP_PPRINTF("E\r\n");
   }
+#endif
 }
 
 /**
