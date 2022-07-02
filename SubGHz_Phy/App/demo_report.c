@@ -97,8 +97,8 @@ void CONC_Report_RCV(const DEMO_packet_sensor_header_t* Header,
     return;     /*Unknown major version*/
   }
 
-  APP_PPRINTF("AT+RCV=0x%08x,0x%02hhx,%hhu:%hhu,%hi,%hhi,",
-            Header->eui, Header->packet_cnt, Header->version_major, Header->version_minor, Rssi, Snr);
+  APP_PPRINTF("AT+RCV=0x%08x,0x%02hx,%hu:%hu,%hi,%hi,%hu\r\n",
+             Header->eui, Header->packet_cnt, Header->version_major, Header->version_minor, Rssi, Snr, DataLen);
 
   switch(Header->version_minor)
   {
@@ -159,7 +159,9 @@ static void Report_1_0_RCV(const DEMO_data_1_0_t* Data, uint32_t DataLen)
   /*Voltage*/
   if(voltage_present == true)
   {
-    APP_PPRINTF("%hhu.%02hhu\r\n", Data->voltage / 20, (Data->voltage % 20) * 5);
+	  APP_PPRINTF("%hu.%02hu,", Data->voltage / 20, (Data->voltage % 20) * 5);
+	  APP_PPRINTF("%hu,", Data->wind_sensor_time);
+	  APP_PPRINTF("\r\n");
   }
   else
   {
