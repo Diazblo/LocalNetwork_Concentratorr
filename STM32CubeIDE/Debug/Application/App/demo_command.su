@@ -1,0 +1,6 @@
+/home/abc/Workspace/Work/Cranesafe/Code/STM32Cube_FW_WL_V1.0.0/Projects/NUCLEO-WL55JC/Demonstrations/LocalNetwork/LocalNetwork_Concentrator/SubGHz_Phy/App/demo_command.c:309:6:CMD_Init	16	static
+/home/abc/Workspace/Work/Cranesafe/Code/STM32Cube_FW_WL_V1.0.0/Projects/NUCLEO-WL55JC/Demonstrations/LocalNetwork/LocalNetwork_Concentrator/SubGHz_Phy/App/demo_command.c:325:6:CMD_Process	72	static,ignoring_inline_asm
+/home/abc/Workspace/Work/Cranesafe/Code/STM32Cube_FW_WL_V1.0.0/Projects/NUCLEO-WL55JC/Demonstrations/LocalNetwork/LocalNetwork_Concentrator/SubGHz_Phy/App/demo_command.c:405:16:CMD_ProcessBackSpace	40	static
+/home/abc/Workspace/Work/Cranesafe/Code/STM32Cube_FW_WL_V1.0.0/Projects/NUCLEO-WL55JC/Demonstrations/LocalNetwork/LocalNetwork_Concentrator/SubGHz_Phy/App/demo_command.c:448:13:CMD_GetChar	16	static
+/home/abc/Workspace/Work/Cranesafe/Code/STM32Cube_FW_WL_V1.0.0/Projects/NUCLEO-WL55JC/Demonstrations/LocalNetwork/LocalNetwork_Concentrator/SubGHz_Phy/App/demo_command.c:471:13:parse_cmd	32	static
+/home/abc/Workspace/Work/Cranesafe/Code/STM32Cube_FW_WL_V1.0.0/Projects/NUCLEO-WL55JC/Demonstrations/LocalNetwork/LocalNetwork_Concentrator/SubGHz_Phy/App/demo_command.c:551:13:com_error	16	static

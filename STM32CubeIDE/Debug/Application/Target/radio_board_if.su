@@ -1,0 +1,7 @@
+/home/abc/Workspace/Work/Cranesafe/Code/STM32Cube_FW_WL_V1.0.0/Projects/NUCLEO-WL55JC/Demonstrations/LocalNetwork/LocalNetwork_Concentrator/SubGHz_Phy/Target/radio_board_if.c:57:9:RBI_Init	8	static
+/home/abc/Workspace/Work/Cranesafe/Code/STM32Cube_FW_WL_V1.0.0/Projects/NUCLEO-WL55JC/Demonstrations/LocalNetwork/LocalNetwork_Concentrator/SubGHz_Phy/Target/radio_board_if.c:98:9:RBI_DeInit	8	static
+/home/abc/Workspace/Work/Cranesafe/Code/STM32Cube_FW_WL_V1.0.0/Projects/NUCLEO-WL55JC/Demonstrations/LocalNetwork/LocalNetwork_Concentrator/SubGHz_Phy/Target/radio_board_if.c:126:9:RBI_ConfigRFSwitch	16	static
+/home/abc/Workspace/Work/Cranesafe/Code/STM32Cube_FW_WL_V1.0.0/Projects/NUCLEO-WL55JC/Demonstrations/LocalNetwork/LocalNetwork_Concentrator/SubGHz_Phy/Target/radio_board_if.c:180:9:RBI_GetTxConfig	8	static
+/home/abc/Workspace/Work/Cranesafe/Code/STM32Cube_FW_WL_V1.0.0/Projects/NUCLEO-WL55JC/Demonstrations/LocalNetwork/LocalNetwork_Concentrator/SubGHz_Phy/Target/radio_board_if.c:197:9:RBI_GetWakeUpTime	8	static
+/home/abc/Workspace/Work/Cranesafe/Code/STM32Cube_FW_WL_V1.0.0/Projects/NUCLEO-WL55JC/Demonstrations/LocalNetwork/LocalNetwork_Concentrator/SubGHz_Phy/Target/radio_board_if.c:214:9:RBI_IsTCXO	8	static
+/home/abc/Workspace/Work/Cranesafe/Code/STM32Cube_FW_WL_V1.0.0/Projects/NUCLEO-WL55JC/Demonstrations/LocalNetwork/LocalNetwork_Concentrator/SubGHz_Phy/Target/radio_board_if.c:231:9:RBI_IsDCDC	8	static
