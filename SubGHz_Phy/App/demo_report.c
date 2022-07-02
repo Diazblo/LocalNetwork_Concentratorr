@@ -124,7 +124,6 @@ void CONC_Report_RCV(const DEMO_packet_sensor_header_t* Header,
     case 1: /*v1:1*/
     {
       DEMO_data_1_1_t data;
-      size_t payload_DataLen = sizeof(DEMO_data_1_0_t);
       memcpy((uint8_t*)(&data), Data, DataLen); /*Copy the payload into parseable structure*/
       Report_1_1_RCV(&data, DataLen);   /*Print*/
       break;
