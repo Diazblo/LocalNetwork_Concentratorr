@@ -61,11 +61,35 @@ void Error_Handler(void);
 #define RTC_N_PREDIV_S 10
 #define RTC_PREDIV_S ((1<<RTC_N_PREDIV_S)-1)
 #define RTC_PREDIV_A ((1<<(15-RTC_N_PREDIV_S))-1)
+
+/* Private config -----------------------------------------------------------*/
 #define LPUART_BAUDRATE 9600
+
+// Default Region
+// referred from demo_regions.c
+// Replaced in at_init() -- RegRegion = DEMO_DEFAULT_REGION; from demo_at.c
+#define DEMO_DEFAULT_REGION 4
+#define DEMO_DEFAULT_SUBREGION 0
+
+// Verbose Level
+// Referred from sys_conf.h
+// Replaced with #ifndef
+#define VERBOSE_LEVEL     VLEVEL_H
+
+#if 1
 #define USARTx_RX_Pin GPIO_PIN_3
 #define USARTx_RX_GPIO_Port GPIOA
 #define USARTx_TX_Pin GPIO_PIN_2
 #define USARTx_TX_GPIO_Port GPIOA
+#else
+// PINS for LoRa E5 cp2102 UART
+#define USARTx_RX_Pin GPIO_PIN_6
+#define USARTx_RX_GPIO_Port GPIOB
+#define USARTx_TX_Pin GPIO_PIN_7
+#define USARTx_TX_GPIO_Port GPIOB
+#endif
+/* Private config end -----------------------------------------------------------*/
+
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

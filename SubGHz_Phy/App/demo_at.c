@@ -71,8 +71,8 @@ void at_init(void)
   RegFskParam.fdev = DEMO_DEFAULT_FDEV;
   RegFskParam.rise = DEMO_DEFAULT_RISE;
 
-  RegRegion = 0;
-  RegSubregion = 0;
+  RegRegion = DEMO_DEFAULT_REGION;
+  RegSubregion = DEMO_DEFAULT_SUBREGION;
 }
 
 ATEerror_t at_return_ok(const char *param)
