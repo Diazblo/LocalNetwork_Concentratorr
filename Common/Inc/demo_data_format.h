@@ -36,6 +36,8 @@ typedef  struct
   int16_t temperature;  /**<Temperature [0.01 `C]*/
 
   uint8_t voltage;      /**<Voltage on the MCU [0.05 V]*/
+
+  uint16_t wind_sensor_time;
 } __packed DEMO_data_1_0_t;
 
 /**Error values for DEMO_data_1_0_t*/
