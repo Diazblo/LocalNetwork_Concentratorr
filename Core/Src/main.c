@@ -18,6 +18,7 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
+#include "main.h"
 #include "platform.h"
 #include "stm32_seq.h"
 #include "demo_command.h"
@@ -126,6 +127,13 @@ int main(void)
   /*Init concentrator stuff (beacons are not sent yet)*/
   CONC_Init();
 
+
+  /*Init beacon */
+  APP_LOG(TS_OFF, VLEVEL_L,
+            "------------------------------------------\r\n"
+            "  Initiating Beacon with default setting  \r\n"
+            "------------------------------------------\r\n");
+  at_beacon_run("");
   /* USER CODE END 2 */
 
   /* Infinite loop */

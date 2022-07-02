@@ -102,7 +102,7 @@ void SystemApp_Init(void)
   Gpio_PreInit();
 
   /* Configure the debug mode*/
-  DBG_Init();
+//  DBG_Init();
 
   /*Initialize the terminal */
   UTIL_ADV_TRACE_Init();
