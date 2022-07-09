@@ -107,6 +107,20 @@ int main(void)
   BSP_LED_Init(LED_BLUE);
   BSP_LED_Off(LED_BLUE);
 
+  	  /* Workaround for UART1 - physically connected LPUSART1 and USART1 -------------- */
+	__HAL_RCC_GPIOB_CLK_ENABLE();
+	GPIO_InitTypeDef   GPIO_InitStructure1;
+	GPIO_InitStructure1.Mode = GPIO_MODE_INPUT;
+	GPIO_InitStructure1.Pull = GPIO_NOPULL;
+	GPIO_InitStructure1.Pin = GPIO_PIN_6;
+	HAL_GPIO_Init(GPIOA, &GPIO_InitStructure1);
+
+	GPIO_InitTypeDef   GPIO_InitStructure2;
+	GPIO_InitStructure2.Mode = GPIO_MODE_INPUT;
+	GPIO_InitStructure2.Pull = GPIO_NOPULL;
+	GPIO_InitStructure2.Pin = GPIO_PIN_7;
+	HAL_GPIO_Init(GPIOA, &GPIO_InitStructure2);
+	/* END------------------------------------------------------------------------- */
 
   /************************************************
    *
