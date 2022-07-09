@@ -37,7 +37,7 @@ extern "C" {
 #define DEMO_DEFAULT_LORA          1
 
 /*Number of periods sensor can miss without being lost*/
-#define DEMO_SENSOR_MISS_LIMIT     5
+#define DEMO_SENSOR_MISS_LIMIT     15
 
 /*Default coding and modulation parameters*/
 #define DEMO_DEFAULT_CR            1
